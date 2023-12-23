@@ -1,1 +1,18 @@
-
+spring:
+  datasource:
+    url: jdbc:postgresql://localhost:${PORT}/${POSTGRES_DATABASE}
+    username: ${POSTGRES_USERNAME}
+    password: ${POSTGRES_PASSWORD}
+    driver-class-name: org.postgresql.Driver
+  liquibase:
+    change-log: classpath:liquibase/db.changelog.yaml
+    enabled: true
+    default-schema: ${POSTGRES_SCHEMA}
+  graphql:
+    graphiql:
+      enabled: true
+grpc:
+  server:
+    port: 8980
+server:
+  port: 8082

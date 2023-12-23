@@ -21,11 +21,11 @@
         <liquibase.version>4.19.0</liquibase.version>
         <graphql-java-kickstart.version>15.0.0</graphql-java-kickstart.version>
         <graphql-java-extended-scalars.version>20.2</graphql-java-extended-scalars.version>
-        <grpc.version>1.60.0</grpc.version>
         <protoc.version>3.25.1</protoc.version>
         <protobuf-maven-plugin.version>0.6.1</protobuf-maven-plugin.version>
         <annotation-api.version>1.3.2</annotation-api.version>
-        <grpc-client-starter.version>2.15.0.RELEASE</grpc-client-starter.version>
+        <grpc-server-starter.version>2.15.0.RELEASE</grpc-server-starter.version>
+        <grpc.version>1.60.0</grpc.version>
     </properties>
 
     <dependencies>
@@ -98,8 +98,8 @@
 
         <dependency>
             <groupId>net.devh</groupId>
-            <artifactId>grpc-client-spring-boot-starter</artifactId>
-            <version>${grpc-client-starter.version}</version>
+            <artifactId>grpc-server-spring-boot-starter</artifactId>
+            <version>${grpc-server-starter.version}</version>
         </dependency>
     </dependencies>
 
