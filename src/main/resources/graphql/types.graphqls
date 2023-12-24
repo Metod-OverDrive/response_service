@@ -1,0 +1,13 @@
+
+type User {
+    id: ID
+    name: String
+    course: String
+}
+
+input InputUser {
+    id: ID
+    name: String
+    course: String
+
+}
