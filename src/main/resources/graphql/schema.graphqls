@@ -1,0 +1,8 @@
+type Query {
+    userById(id: ID): User
+    users: [User]
+}
+
+type Mutation {
+    updateUser(dto: InputUser): User
+}
