@@ -1,0 +1,21 @@
+syntax = "proto3";
+
+package service;
+
+option java_multiple_files = true;
+option java_package = "com.practice.grpccommon";
+option java_outer_classname = "GeneratorProto";
+option objc_class_prefix = "RTG";
+
+import "google/protobuf/empty.proto";
+
+message UserProto {
+  int64 id = 1;
+  string name = 2;
+  string course = 3;
+}
+
+service UserService {
+  rpc Create(UserProto) returns (UserProto);
+  rpc GetAllUsers(google.protobuf.Empty) returns (stream UserProto);
+}
